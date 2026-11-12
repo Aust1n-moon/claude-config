@@ -2,7 +2,7 @@
   "model": "opus",
   "statusLine": {
     "type": "command",
-    "command": "bash /home/atm/.claude/statusline.sh",
+    "command": "bash /home/atm/Documents/Projects/claude-config/statusline.sh",
     "refreshInterval": 60
   },
   "enabledPlugins": {

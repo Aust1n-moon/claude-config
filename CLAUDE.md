@@ -33,7 +33,6 @@
 - Read files before editing. Never assume a file, API, function, schema, or dependency exists. Check it.
 - Write only what I asked for. No extra features, abstractions, config options, or error handling for impossible cases.
 - Use the simplest code that works. If 200 lines could be 50, write 50.
-- Write the simplest, most easy-to-read code possible. Plain "leetcode" style: code a beginner can follow line by line with no decoding.
 - Touch only what the task needs. Match existing style. Don't refactor, reformat, or "improve" adjacent code.
 - Remove only what your change made unused. Mention other dead code or issues; don't fix them.
 - If several interpretations or approaches exist, list them briefly and recommend one. Don't pick silently.
