@@ -16,6 +16,7 @@
 - Prefer a direct sentence over a list, and a short list over padded prose.
 - If my intent is unclear, ask. Don't assume.
 - In plans, skip standing CLAUDE.md instructions. Include only task-specific constraints, decisions, and risks.
+- No em dashes anywhere: code, comments, docs, UI strings. Use a hyphen, colon, or comma instead.
 
 ## Git
 - Don't run push, merge, rebase, checkout, switch, or reset without my explicit permission in this session. This includes safe forms such as fast-forwards and `switch` to an existing branch. Moving a branch pointer is my call. If a branch is stale, say so and ask.
@@ -32,10 +33,12 @@
 - Read files before editing. Never assume a file, API, function, schema, or dependency exists. Check it.
 - Write only what I asked for. No extra features, abstractions, config options, or error handling for impossible cases.
 - Use the simplest code that works. If 200 lines could be 50, write 50.
+- Write the simplest, most easy-to-read code possible. Plain "leetcode" style: code a beginner can follow line by line with no decoding.
 - Touch only what the task needs. Match existing style. Don't refactor, reformat, or "improve" adjacent code.
 - Remove only what your change made unused. Mention other dead code or issues; don't fix them.
 - If several interpretations or approaches exist, list them briefly and recommend one. Don't pick silently.
 - Python: no `Any`. Use specific types, generics, or `Protocol`. Allow `Any` only at untyped boundaries, with a comment.
+- C++: avoid templates beyond what the task forces, operator overloading, clever pointer arithmetic, dense STL algorithm chains (prefer a plain loop), macros, deep one-liners.
 
 ## Comments
 - Default to no comment. Add one only to prevent a specific misunderstanding: non-obvious intent, a workaround, or a deliberate choice against the obvious option.
