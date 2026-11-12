@@ -2,7 +2,7 @@
   "model": "opus",
   "statusLine": {
     "type": "command",
-    "command": "python3 /home/atm/.claude/statusline.py",
+    "command": "bash /home/atm/.claude/statusline.sh",
     "refreshInterval": 60
   },
   "enabledPlugins": {
