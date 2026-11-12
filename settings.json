@@ -1,0 +1,86 @@
+{
+  "model": "opus",
+  "statusLine": {
+    "type": "command",
+    "command": "python3 /home/atm/.claude/statusline.py",
+    "refreshInterval": 60
+  },
+  "enabledPlugins": {
+    "ponytail@ponytail": true,
+    "claude-mem-cowork@thedotmack": true,
+    "superpowers@anthropic-plugin-directory": true,
+    "code-review@anthropic-plugin-directory": true,
+    "frontend-design@anthropic-plugin-directory": true
+  },
+  "extraKnownMarketplaces": {
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    },
+    "thedotmack": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/thedotmack/claude-mem.git"
+      }
+    }
+  },
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "autoCompactWindow": 400000
+    }
+  },
+  "tui": "fullscreen",
+  "autoMode": {
+    "environment": [
+      "### Org-wide",
+      "**Organization**: None configured",
+      "**Cloud provider(s)**: Google (Google Tasks API / OAuth) \u2014 used by this project for Google Tasks integration; no broader cloud provider configured",
+      "**Repository visibility**: not queryable here \u2014 assume private per shipped default (github.com/Aust1n-moon/Mybot; no visibility signal found in transcript)",
+      "**Internal sharing / snippet hosting**: None configured \u2014 treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: local .env file and Google OAuth credential JSON (google_credentials.json, google_token.json), both gitignored \u2014 no external secrets manager configured",
+      "**Default / protected branches**: not queryable here \u2014 default branch unset (origin/HEAD unset), no branch protection info available",
+      "**CI/CD deploy targets**: None configured",
+      "**Network posture**: None configured",
+      "**Host containment**: None configured \u2014 assume Claude Code runs on an ordinary developer machine with open internet",
+      "**Source control**: The trusted repo (github.com/Aust1n-moon/Mybot) and its remote only (no additional orgs configured)",
+      "**Trusted internal domains**: learn.uwaterloo.ca (Waterloo LEARN iCal feed, contacted 3\u00d7 in this project's transcripts)",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: Waterloo LEARN (learn.uwaterloo.ca, iCal feed); Google Tasks API; Yahoo Finance (stock data)",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: .env, .env.example, google_credentials.json, google_token.json \u2014 Discord bot token, Google OAuth credentials, LEARN/Google Calendar iCal feed URLs; personal-use only, not for sharing beyond the repo owner",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment",
+      "**Protected deployment namespaces / environments**: None configured \u2014 fall back to the Sensitive remote targets heuristic",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
+      "### User-specific",
+      "**Primary use of Claude Code**: personal/hobby software development (Discord bot project)",
+      "**Trusted repo**: /home/atm/Documents/Projects/Mybot and its remote github.com/Aust1n-moon/Mybot.git",
+      "**Org-specific CLIs**: None configured",
+      "routine under /home/atm/Documents/Projects/Mybot/ prefix"
+    ]
+  },
+  "agentPushNotifEnabled": true,
+  "inputNeededNotifEnabled": true,
+  "permissions": {
+    "ask": [
+      "Bash(git push *)",
+      "Bash(git push)",
+      "Bash(git merge *)",
+      "Bash(git rebase *)",
+      "Bash(git checkout *)",
+      "Bash(git switch *)",
+      "Bash(git reset *)",
+      "Bash(git branch -d *)",
+      "Bash(git branch -D *)",
+      "Bash(rm *)",
+      "Bash(npm install *)",
+      "Bash(npm i *)",
+      "Bash(pip install *)",
+      "Bash(uv add *)",
+      "Bash(cargo install *)",
+      "Bash(sudo dnf *)"
+    ]
+  }
+}
